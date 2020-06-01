@@ -1,0 +1,31 @@
+package Inc;
+
+public class DataStructure_P2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] input = { 2, 5, 1, 3, 4, 1, 4, 3, 2, 2, 2 };
+		// identiy total case
+		int totalcases = input[0];
+		int starter = 2, arraysize = input[1];
+		int arraylimit;
+
+		for (int i = 0; i < totalcases; i++) {
+			arraylimit = starter + arraysize;
+			int counter = 0;
+			for (int j = starter; j < arraylimit; j++) {
+				for (int k = j+1; k < arraylimit; k++) {
+					if ((input[j] ^ input[k]) == 0) {
+						counter++;
+					}
+				}
+			}
+			if (arraylimit < input.length - 1) {
+				arraysize = input[arraylimit];
+				starter = arraylimit + 1;
+			}
+			System.out.println("Number of paires : " + counter);
+		}
+	}
+
+}
