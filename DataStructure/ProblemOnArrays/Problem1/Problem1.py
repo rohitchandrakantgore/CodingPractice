@@ -37,25 +37,34 @@ def sort012(arr, n):
     return resultArray
 
 if __name__ == "__main__":
-    array_size = int(input("Enter the Size Of Array : "))
-
-    array_list = list()
-    for i in range(array_size) :
-        array_list.append(int(input("Enter {} element : ".format(i))))
+    test_cases = int(input("Enter Number of Test cases : ")) 
+    for i in range(1, test_cases+1):
         
-    # print(array_list)
+        array_size = int(input("Enter the Size Of {} Array : ".format(i)))
 
-    arr = array('i', array_list)
-    
-    result = sort012(arr,array_size)
-    print(result)
+        array_list = list()
+        
+        for j in range(array_size):
+            array_list.append(int(input("Enter {} element of {} Array : ".format(j,i))))
+        
+        arr = array('i', array_list)
+
+        result = sort012(arr,array_size)
+        print("Result Array", result)
 
 
 
 ############    Result  #########
-# Enter the Size Of Array : 4
-# Enter 0 element : 0
-# Enter 1 element : 1
-# Enter 2 element : 0
-# Enter 3 element : 0
-# array('i', [0, 0, 0, 1])
+# Enter Number of Test cases : 2
+# Enter the Size Of 1 Array : 3
+# Enter 0 element of 1 Array : 1
+# Enter 1 element of 1 Array : 0
+# Enter 2 element of 1 Array : 0
+# Result Array array('i', [0, 0, 1])
+# Enter the Size Of 2 Array : 5
+# Enter 0 element of 2 Array : 1
+# Enter 1 element of 2 Array : 0
+# Enter 2 element of 2 Array : 2
+# Enter 3 element of 2 Array : 0
+# Enter 4 element of 2 Array : 1
+# Result Array array('i', [0, 0, 1, 1, 2])

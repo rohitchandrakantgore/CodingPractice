@@ -15,17 +15,21 @@ def xorOps(arr, n):
                 count += 1
             else:
                 continue
+
     return count
 
 if __name__ == "__main__":
 
     test_cases = int(input("Enter Number of Test cases : ")) 
     for i in range(1, test_cases+1):
+        
         array_size = int(input("Enter the Size Of {} Array : ".format(i)))
 
         array_list = list()
-        for j in range(array_size) :
-            array_list.append(int(input("Enter {} element of {} Array : ".format(j,i))))
+        array_list.append(int(input("Enter Array elements")))
+        # for j in range(array_size):
+        #     array_list.append(int(input("Enter Array : "))
+        
         arr = array('i', array_list)
     
         result = xorOps(arr,array_size)
@@ -33,7 +37,7 @@ if __name__ == "__main__":
 
 
 
-############    Result  #########
+##########  Result  #########
 # Enter Number of Test cases : 2
 # Enter the Size Of 1 Array : 5
 # Enter 0 element of 1 Array : 1
