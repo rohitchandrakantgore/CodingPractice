@@ -1,0 +1,49 @@
+package Inc;
+
+public class kaprekar_number {
+	public static void main(String[] args) {
+		System.out.println("Keparekar numbers :");
+		for (int i = 1; i <= 1000; i++) {
+			if (isKeprekarNo(i)) {
+				System.out.println(i);
+			}
+		}
+	}
+
+	private static boolean isKeprekarNo(int i) {
+		boolean result = false;
+		int square, base = i, diviser ;
+		int[] factores=new int[2];;
+		square = i * i;
+		if (square == base) {
+			return true;
+		} else if (!((square / 10) == 0)) {
+			diviser = findDiviser(base);
+			factores=findFactores(square,diviser);
+			
+			int addition=factores[0]+factores[1];
+			if (addition == base){
+				 result=true;
+			}
+		}
+		return result;
+	}
+
+	private static int[] findFactores(int square, int diviser) {
+		int result[] = new int[2];
+		result[0]=square / diviser;
+		result[1]=square % diviser;
+		return result;
+	}
+
+	private static int findDiviser(int base) {
+		int result = 0;
+		for (int i = 10; i > 9; i *= 10) {
+			if((base / i) ==0){
+				result=i;
+				break;
+			}
+		}
+		return result;
+	}
+}
