@@ -10,4 +10,6 @@
 |  4 | program to find the largest possible number from given array/list of elements  |Rohit   | 2 June 2020  |
 |  5 | pending  |Mininath   | 3 June 2020  |
 |  6 | pending  |Akshay   | 4 June 2020  |
-|  7 | pending  |Rohit   | 5 June 2020  |
+|  7 | print pyramid pattern for user given symbol  |Rohit   | 5 June 2020  |
+|  8 | pending  |Mininath  | 6 June 2020  |
+|  9 | pending  |Akshay  | 7 June 2020  |
