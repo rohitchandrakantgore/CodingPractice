@@ -13,3 +13,4 @@
 |  7 | print pyramid pattern for user given symbol  |Rohit   | 5 June 2020  |
 |  8 | Given an array of N positive integers, print k largest elements from the array.  The output elements should be printed in decreasing order.  |Mininath  | 6 June 2020  |
 |  9 | pending  |Akshay  | 7 June 2020  |
+|  10 | program to convert vowels into uppercase character in a given string  |Rohit  | 8 June 2020  |
