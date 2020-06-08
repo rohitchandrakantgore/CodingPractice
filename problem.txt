@@ -1,0 +1,6 @@
+15. Write a Java program to check whether a number is a Duck Number or not. Go to the editor
+Note: A Duck number is a number which has zeroes present in it, but there should be no zero present in the beginning of the number. For example 3210, 7056, 8430709 are all duck numbers whereas 08237, 04309 are not.
+Expected Output
+
+Input a number : 3210                                                   
+Duck number
