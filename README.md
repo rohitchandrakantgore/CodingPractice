@@ -14,3 +14,8 @@
 |  8 | Given an array of N positive integers, print k largest elements from the array.  The output elements should be printed in decreasing order.  |Mininath  | 6 June 2020  |
 |  9 | pending  |Akshay  | 7 June 2020  |
 |  10 | program to convert vowels into uppercase character in a given string  |Rohit  | 8 June 2020  |
+|  11 | pending   |Mininath  | 9 June 2020  |
+|  12 | pending  |Akshay  | 10 June 2020  |
+|  13 | pending  |Rohit  | 11 June 2020  |
+|  14 | pending  |Mininath  | 12 June 2020  |
+|  15 | pending  |Akshay  | 13 June 2020  |
